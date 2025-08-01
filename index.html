@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Section -->
+     
+    <h1 class="title">BMI Calculator</h1>
+
+    <div class="input-section">
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter your weight">
+    </div>
+
+    <div class="input-section">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="Enter your height">
+    </div>
+
+    <!-- New: Goal Selection -->
+    <div class="input-section">
+      <label for="goal">Your Goal:</label>
+      <select id="goal">
+        <option value="maintain">Maintain</option>
+        <option value="gain">Gain Muscle</option>
+        <option value="lose">Lose Weight</option>
+      </select>
+    </div>
+
+    <div class="button-group">
+  <button class="btn" onclick="calculateBMI()">Calculate BMI</button>
+   
+  <button class="btn" onclick="resetForm()">Reset</button>
+</div>
+
+
+    <div id="bmiResult" class="result"></div>
+
+    <div id="fitnessTips" class="tips"></div>
+
+    <div id="bmiChartContainer">
+      <canvas id="bmiChart"></canvas>
+    </div>
+
+    <div id="dietContainer">
+      <h2>Diet Suggestions:</h2>
+      <ul id="dietList"></ul>
+    </div>
+
+    <div id="exerciseContainer">
+      <h2>Exercise Suggestions:</h2>
+      <ul id="exerciseList"></ul>
+    </div>
+
+    <button class="btn" onclick="downloadPDF()">Download PDF</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

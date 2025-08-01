@@ -1,0 +1,277 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body: Center everything and allow smooth layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: #fff;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Container: The actual website box */
+.container {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.input-section {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #333;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #ff5733; /* Vibrant orange-red */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3d00; /* Darker orange-red on hover */
+}
+
+.result, .tips, #dietContainer, #exerciseContainer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#bmiResult {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+    
+#bmiChartContainer {
+    margin-top: 40px;
+}
+
+h2 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #99ff99;
+}
+
+.tips {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .input-section input {
+        width: 80%;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Keep logo and title centered and fixed at the top */
+ 
+.title {
+    font-size: 2.2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Responsive Inputs */
+.input-section {
+    margin: 15px 0;
+    width: 100%;
+    text-align: left;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.input-section input,
+.input-section select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+    background: #fff;
+}
+
+/* Buttons layout */
+button {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 12px 25px;
+    background-color: #ff5733;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3d00;
+}
+
+/* Result and tips boxes */
+.result, .tips, #dietContainer, #exerciseContainer {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 100%;
+}
+
+#bmiResult {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+#bmiChartContainer {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Table or List Style */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: #99ff99;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    input, select {
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 600px) {
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+}
+.result, .tips {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
